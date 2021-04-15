@@ -1,0 +1,39 @@
+.posts > div {
+    margin-top: 5px;
+    border-style:solid;
+    border-color:#e7a01d;
+    border-width: 1px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+}
+.posts > div > h2{
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-left:5px;
+    padding-bottom: 5px;
+    font-weight:100;
+    color:black;
+    font-size:15px;
+    margin-bottom: 5px;
+    
+}
+.posts > div > p{
+    padding-top: 5px;
+    padding-bottom: 0px;
+    padding-left:5px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+}
+form{
+    display:grid;
+    grid-template-rows: 33.3% 33.3% 33.3%; 
+    width: 50%;
+    height: 80%;
+    margin-left: 25%;
+    padding-top:10%;
+    padding-bottom:10px;
+}

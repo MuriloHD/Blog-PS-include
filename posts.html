@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Assets/estilo.css">
+    <link rel="stylesheet" href="Assets/posts.css">
+    <title>HotsBlog.com</title>
+</head>
+<body>
+    <header class = "cabecalho">
+        <h1>HotsBlog.com</h1>
+        <div class = "menu">
+            <a href="/index.html">Perfil</a>
+            <a href="/posts.html">Comentarios</a>
+        </div>
+    </header>
+
+
+    <div class="posts" id = "2">
+    
+    </div>
+    
+    <form name ="form">
+    
+        
+            <input type="text" name="nome" placeholder = "nome">
+        
+        
+            <input type="text" name="Descricao" placeholder = "Comentario">
+        
+        
+
+         
+        <input type="button" value="Criar" onclick="postagem(this.form)">
+        
+    
+    
+    
+    </form>
+    
+    
+    <script>
+        function postagem(form){
+            const div = document.createElement('div')
+            const post_title = document.createElement('h2')
+            const post_conteudo = document.createElement('p')
+            const Visivel = document.createElement('input:checkbox')
+            post_title.className = "post"
+            div.appendChild(post_title)
+            div.appendChild(post_conteudo)
+            let myDiv = document.getElementById('2')
+            post_title.innerText=form.nome.value
+            post_conteudo.innerText = form.Descricao.value
+            div.appendChild(Visivel)
+            div.post_conteudo = form.Descricao.value
+
+            myDiv.appendChild(div)
+            form.nome.value = null
+            form.Descricao.value = null
+    
+        }
+    </script>
+    
+    <footer>
+        <img src="Assets/smartphone.png" alt="FoneIcon">
+        <p>(84) 99999-2930</p>
+        <img src="Assets/instagram.png" alt="instagramImage">
+        <a href="https://www.instagram.com/murilo_hd/">@murilo_hd</a>
+        
+        
+    </footer>
+
+</body>
+
+</html>
